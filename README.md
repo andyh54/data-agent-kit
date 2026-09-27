@@ -4,10 +4,12 @@ Shared, versioned references, skills, and future agent profiles to support data 
 
 ## Current scope
 
-Version 0.2 contains two skills and one read-only agent profile:
+Version 0.3 contains four skills and one read-only agent profile:
 
 - `dbt-model-development` sets the minimum expectations for planning, changing, and validating dbt models without assuming a particular project structure or naming convention.
 - `dbt-standards-assessment` performs a read-only, evidence-based review of a selected collection of dbt models and writes a Markdown assessment.
+- `dbt-sql-server-conversion` translates SQL Server/T-SQL transformation assets into safe, testable dbt designs.
+- `dbt-databricks-sql-conversion` translates existing Databricks SQL tables, views, and procedures into appropriate dbt designs.
 - `dbt-standards-assessor` invokes the assessment skill and prepares PR-ready assessment evidence for an engineer to check and own.
 
 Installation scripts and the remaining skills will be added after the shared standards have been reviewed. Nothing in this folder is installed into an engineer's editor yet.
@@ -33,12 +35,21 @@ data-agent-kit/
             ├── incremental-model-standard.md
             ├── validation-and-change-scope.md
             ├── candidate-modelling-and-development-standards.md
+            ├── legacy-sql-conversion-method.md
             └── source-notes.md
     └── dbt-standards-assessment/
         ├── SKILL.md
         └── references/
             ├── assessment-criteria.md
             └── assessment-report-template.md
+    ├── dbt-sql-server-conversion/
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── sql-server-to-databricks-considerations.md
+    └── dbt-databricks-sql-conversion/
+        ├── SKILL.md
+        └── references/
+            └── databricks-sql-asset-classification.md
 ```
 
 ## How the guidance should be applied
