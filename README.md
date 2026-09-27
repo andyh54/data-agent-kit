@@ -1,6 +1,6 @@
 # Data Agent Kit
 
-Shared, versioned guidance for teams developing dbt projects. It is designed to be installed locally by an engineer and used across multiple repositories; each dbt repository continues to own its project-specific instructions, conventions, commands, and data contracts.
+Shared, versioned references, skills, and future agent profiles to support data engineers following good practices. It is designed to be installed locally by an engineer and used across multiple repositories; each dbt repository continues to own its project-specific instructions, conventions, commands, and data contracts.
 
 ## Current scope
 
