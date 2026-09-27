@@ -4,12 +4,13 @@ Shared, versioned references, skills, and future agent profiles to support data 
 
 ## Current scope
 
-Version 0.1 contains two skills:
+Version 0.2 contains two skills and one read-only agent profile:
 
 - `dbt-model-development` sets the minimum expectations for planning, changing, and validating dbt models without assuming a particular project structure or naming convention.
 - `dbt-standards-assessment` performs a read-only, evidence-based review of a selected collection of dbt models and writes a Markdown assessment.
+- `dbt-standards-assessor` invokes the assessment skill and prepares PR-ready assessment evidence for an engineer to check and own.
 
-Agent profiles, installation scripts, and the remaining skills will be added after the shared standards have been reviewed. Nothing in this folder is installed into an engineer's editor yet.
+Installation scripts and the remaining skills will be added after the shared standards have been reviewed. Nothing in this folder is installed into an engineer's editor yet.
 
 The version 0.1 candidate standards sit with the `dbt-model-development` skill, so they travel with the skill when it is installed. They are guidance to review and adapt across the four projects, not automatic pass/fail checks.
 
@@ -18,10 +19,13 @@ The version 0.1 candidate standards sit with the `dbt-model-development` skill, 
 ```text
 data-agent-kit/
 ├── VERSION
+├── agents/
+│   └── dbt-standards-assessor.agent.md
 ├── templates/
+│   ├── dbt-pull-request-template.md
 │   └── repository-assessment-worksheet.md
 └── skills/
-    └── dbt-model-development/
+    ├── dbt-model-development/
         ├── SKILL.md
         └── references/
             ├── dbt-development-standard.md
